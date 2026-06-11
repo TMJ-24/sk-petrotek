@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, Zap, Phone, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -21,22 +22,20 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50">
       {/* Main nav */}
-      <div className="bg-[#0f172a] border-b border-[#1e293b]">
+      <div className="bg-[#f1f4f8] border-b border-[#dde2ea]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group shrink-0">
-              <div className="w-10 h-10 bg-[#dc2626] rounded-full flex items-center justify-center shrink-0">
-                <Zap className="w-5 h-5 text-white" />
-              </div>
-              <div className="leading-none">
-                <div className="text-white font-black text-base tracking-[0.3em] uppercase leading-none">SK</div>
-              </div>
-              <div className="hidden sm:block w-px h-8 bg-[#1e293b] ml-2" />
-              <span className="hidden sm:block text-white/70 text-[11px] font-semibold tracking-wide leading-tight">
-                Petroteck Limited
-              </span>
+            <Link href="/" className="flex items-center shrink-0">
+              <Image
+                src="/Logo.jpeg"
+                alt="SK Petroteck Limited"
+                width={56}
+                height={56}
+                className="object-contain"
+                priority
+              />
             </Link>
 
             {/* Desktop Nav */}
@@ -51,7 +50,7 @@ export default function Navbar() {
                       "relative flex items-center gap-1 px-4 h-16 text-xs font-semibold uppercase tracking-[0.12em] transition-colors border-b-2",
                       active
                         ? "text-[#dc2626] border-[#dc2626]"
-                        : "text-white/50 hover:text-white border-transparent hover:border-white/20"
+                        : "text-[#1e293b]/60 hover:text-[#1e293b] border-transparent hover:border-[#1e293b]/20"
                     )}
                   >
                     {link.label}
@@ -65,12 +64,12 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-3">
               <a
                 href="tel:+675XXXXXXXX"
-                className="hidden xl:flex items-center gap-2 text-white/50 hover:text-white transition-colors text-xs font-mono"
+                className="hidden xl:flex items-center gap-2 text-[#1e293b]/50 hover:text-[#1e293b] transition-colors text-xs font-mono"
               >
                 <Phone className="w-3.5 h-3.5" />
                 +675 XXX XXXX
               </a>
-              <div className="hidden xl:block w-px h-5 bg-[#1e293b]" />
+              <div className="hidden xl:block w-px h-5 bg-[#dde2ea]" />
               <Link href="/contact">
                 <button className="h-9 px-6 text-xs font-bold uppercase tracking-[0.12em] bg-[#dc2626] text-white hover:bg-[#b91c1c] transition-colors">
                   Get a Quote
@@ -81,7 +80,7 @@ export default function Navbar() {
             {/* Mobile toggle */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden text-white/50 hover:text-white transition-colors p-1"
+              className="md:hidden text-[#1e293b]/50 hover:text-[#1e293b] transition-colors p-1"
               aria-label="Toggle menu"
             >
               {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -95,7 +94,7 @@ export default function Navbar() {
         "md:hidden overflow-hidden transition-all duration-200",
         mobileOpen ? "max-h-96" : "max-h-0"
       )}>
-        <div className="bg-[#0f172a] border-b border-[#1e293b]">
+        <div className="bg-[#f1f4f8] border-b border-[#dde2ea]">
           {navLinks.map((link) => {
             const active = pathname === link.href;
             return (
@@ -104,10 +103,10 @@ export default function Navbar() {
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
                 className={cn(
-                  "flex items-center px-5 py-3.5 text-xs font-semibold uppercase tracking-[0.12em] border-b border-[#1e293b] transition-colors",
+                  "flex items-center px-5 py-3.5 text-xs font-semibold uppercase tracking-[0.12em] border-b border-[#dde2ea] transition-colors",
                   active
                     ? "text-[#dc2626] bg-[#dc2626]/5 border-l-2 border-l-[#dc2626]"
-                    : "text-white/50 hover:text-white hover:bg-white/5"
+                    : "text-[#1e293b]/60 hover:text-[#1e293b] hover:bg-[#1e293b]/5"
                 )}
               >
                 {link.label}

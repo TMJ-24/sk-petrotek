@@ -26,8 +26,9 @@ yarn-error.log*
 .env
 .env*.local
 
-# vercel
+# vercel / cloudflare build output
 .vercel
+.wrangler
 
 # typescript
 *.tsbuildinfo

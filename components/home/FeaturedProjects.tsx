@@ -9,7 +9,7 @@ const projects = [
     location: "Gulf Province, PNG",
     year: "2024",
     scope: "Primary School Facility",
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80&fit=crop",
+    image: "/01.jpeg",
     href: "/projects",
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     location: "Gulf Province, PNG",
     year: "2024",
     scope: "Primary School Facility",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop",
+    image: "/02.jpeg",
     href: "/projects",
   },
   {

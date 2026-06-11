@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MapPin, Calendar, Building2, CheckCircle, Clock, Users, Award } from "lucide-react";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 
@@ -10,6 +11,7 @@ const completedProjects = [
     scope: "Primary School Facility",
     status: "Completed",
     contract: "Open Member for Kerema",
+    image: "/01.jpeg",
     description: "Successfully delivered a fully equipped primary school facility for the Kukipi community. The project included classroom blocks, ablution facilities, a water supply system, and paved access pathways — completed within schedule under the Open Member for Kerema's education development initiative.",
     highlights: [
       "Fully furnished classrooms",
@@ -27,6 +29,7 @@ const completedProjects = [
     scope: "Primary School Facility",
     status: "Completed",
     contract: "Open Member for Kerema",
+    image: "/02.jpeg",
     description: "Delivered a modern primary school facility for the Miaru community, providing students with quality learning infrastructure. SK Proteck collaborated closely with local community leaders throughout the build to ensure the facility met the needs of the district.",
     highlights: [
       "Modern classroom blocks",
@@ -169,6 +172,17 @@ export default function ProjectsPage() {
 
                   {/* Content */}
                   <div className="flex-1 p-6">
+                    {"image" in project && project.image && (
+                      <div className="relative h-48 w-full mb-5 overflow-hidden rounded-lg">
+                        <Image
+                          src={project.image as string}
+                          alt={project.name}
+                          fill
+                          className="object-cover object-center"
+                          sizes="(max-width: 1024px) 100vw, 60vw"
+                        />
+                      </div>
+                    )}
                     <h3 className="text-base font-bold text-[#1a1a2a] mb-3">{project.name}</h3>
                     <p className="text-gray-500 text-sm leading-relaxed mb-5">{project.description}</p>
                     <div>
