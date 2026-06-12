@@ -58,7 +58,7 @@ export default function Footer() {
               <div>
                 <p className="text-[#dc2626] text-[10px] font-mono uppercase tracking-[0.2em] mb-2">Partner with PNG&apos;s construction leader</p>
                 <h3 className="text-xl font-black text-white tracking-tight mb-1.5">
-                  Ready to work with SK Proteck?
+                  Ready to work with SK Petroteck?
                 </h3>
                 <p className="text-white/40 text-xs leading-relaxed">Construction, infrastructure delivery, and community development — all in one team.</p>
               </div>
@@ -186,7 +186,7 @@ export default function Footer() {
       <div className="border-t border-[#1e293b]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[10px] text-[#5a6374] font-mono">
-            &copy; {new Date().getFullYear()} SK Proteck Ltd. All rights reserved.
+            &copy; {new Date().getFullYear()} SK Petroteck Ltd. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             {legalLinks.map((l, i) => (

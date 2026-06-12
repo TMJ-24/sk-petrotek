@@ -2,8 +2,8 @@ import Breadcrumb from "@/components/layout/Breadcrumb";
 import { Shield, Mail, MapPin } from "lucide-react";
 
 export const metadata = {
-  title: "Privacy Policy | SK Proteck",
-  description: "SK Proteck's Privacy Policy — how we collect, use, and protect your personal information.",
+  title: "Privacy Policy | SK Petroteck",
+  description: "SK Petroteck's Privacy Policy — how we collect, use, and protect your personal information.",
 };
 
 const sections = [
@@ -83,7 +83,7 @@ export default function PrivacyPolicyPage() {
               Last updated: April 2025
             </p>
             <p className="text-white/60 text-sm leading-relaxed mt-3">
-              SK Proteck Ltd is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your personal information when you interact with our website or services.
+              SK Petroteck Ltd is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your personal information when you interact with our website or services.
             </p>
           </div>
         </div>
@@ -123,7 +123,7 @@ export default function PrivacyPolicyPage() {
                 <MapPin className="w-4 h-4 text-[#dc2626] mt-0.5 shrink-0" />
                 <div>
                   <p className="text-xs font-semibold text-[#1a1a2a] mb-0.5">Registered Office</p>
-                  <p className="text-xs text-gray-500">SK Proteck Ltd, Port Moresby, NCD, Papua New Guinea</p>
+                  <p className="text-xs text-gray-500">SK Petroteck Ltd, Port Moresby, NCD, Papua New Guinea</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">

@@ -78,7 +78,6 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map placeholder */}
               <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
                 <div className="bg-[#f8fafc] h-40 flex flex-col items-center justify-center text-center p-6 border-b border-gray-100">
                   <MapPin className="w-8 h-8 text-[#dc2626] mb-2" />

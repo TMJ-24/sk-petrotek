@@ -24,7 +24,7 @@ const services = [
     icon: School,
     tag: "Govt. Contracted",
     title: "Community Projects",
-    description: "Proud contractors for the Open Member for Kerema. SK Proteck has successfully completed three school construction projects in Eastern Gulf Province, PNG.",
+    description: "Proud contractors for the Open Member for Kerema. SK Petroteck has successfully completed three school construction projects in Eastern Gulf Province, PNG.",
     features: ["School Construction", "Infrastructure Build", "Gulf Province Focus", "Govt. Contracted"],
     href: "/projects",
     accentColor: "#dc2626",

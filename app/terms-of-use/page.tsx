@@ -2,15 +2,15 @@ import Breadcrumb from "@/components/layout/Breadcrumb";
 import { FileText, Mail, MapPin } from "lucide-react";
 
 export const metadata = {
-  title: "Terms of Use | SK Proteck",
-  description: "SK Proteck's Terms of Use — the conditions governing use of our website and services.",
+  title: "Terms of Use | SK Petroteck",
+  description: "SK Petroteck's Terms of Use — the conditions governing use of our website and services.",
 };
 
 const sections = [
   {
     title: "Acceptance of Terms",
     content: [
-      "By accessing or using the SK Proteck website (skproteck.com.pg), you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use this website.",
+      "By accessing or using the SK Petroteck website (skproteck.com.pg), you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use this website.",
       "These terms apply to all visitors, clients, and others who access or use our website.",
     ],
   },
@@ -25,17 +25,17 @@ const sections = [
   {
     title: "Intellectual Property",
     content: [
-      "All content on this website — including text, images, logos, graphics, and design — is the property of SK Proteck Ltd and is protected under applicable copyright law.",
+      "All content on this website — including text, images, logos, graphics, and design — is the property of SK Petroteck Ltd and is protected under applicable copyright law.",
       "You may not reproduce, distribute, modify, or republish any content from this website without our prior written consent.",
-      "The SK Proteck name and logo are trademarks of SK Proteck Ltd. Unauthorised use is prohibited.",
+      "The SK Petroteck name and logo are trademarks of SK Petroteck Ltd. Unauthorised use is prohibited.",
     ],
   },
   {
     title: "Service Enquiries & Quotations",
     content: [
       "Information provided on this website regarding services, pricing, and availability is for general guidance only and does not constitute a binding offer or contract.",
-      "A service agreement is only formed when SK Proteck issues a written quotation and both parties have signed the relevant service contract.",
-      "SK Proteck reserves the right to decline any service enquiry at its sole discretion.",
+      "A service agreement is only formed when SK Petroteck issues a written quotation and both parties have signed the relevant service contract.",
+      "SK Petroteck reserves the right to decline any service enquiry at its sole discretion.",
     ],
   },
   {
@@ -48,14 +48,14 @@ const sections = [
   {
     title: "Limitation of Liability",
     content: [
-      "To the fullest extent permitted by law, SK Proteck Ltd shall not be liable for any indirect, incidental, or consequential damages arising from your use of, or inability to use, this website.",
+      "To the fullest extent permitted by law, SK Petroteck Ltd shall not be liable for any indirect, incidental, or consequential damages arising from your use of, or inability to use, this website.",
       "Our total liability to you in respect of any claim arising from your use of this website shall not exceed the amount paid by you for a specific service, if any.",
     ],
   },
   {
     title: "Links to Third-Party Sites",
     content: [
-      "Our website may contain links to external websites for your convenience. SK Proteck does not endorse or take responsibility for the content, privacy practices, or accuracy of any third-party sites.",
+      "Our website may contain links to external websites for your convenience. SK Petroteck does not endorse or take responsibility for the content, privacy practices, or accuracy of any third-party sites.",
     ],
   },
   {
@@ -94,7 +94,7 @@ export default function TermsOfUsePage() {
               Last updated: April 2025
             </p>
             <p className="text-white/60 text-sm leading-relaxed mt-3">
-              Please read these Terms of Use carefully before using the SK Proteck website. These terms govern your access to and use of our website and services.
+              Please read these Terms of Use carefully before using the SK Petroteck website. These terms govern your access to and use of our website and services.
             </p>
           </div>
         </div>
@@ -134,7 +134,7 @@ export default function TermsOfUsePage() {
                 <MapPin className="w-4 h-4 text-[#dc2626] mt-0.5 shrink-0" />
                 <div>
                   <p className="text-xs font-semibold text-[#1a1a2a] mb-0.5">Registered Office</p>
-                  <p className="text-xs text-gray-500">SK Proteck Ltd, Port Moresby, NCD, Papua New Guinea</p>
+                  <p className="text-xs text-gray-500">SK Petroteck Ltd, Port Moresby, NCD, Papua New Guinea</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">

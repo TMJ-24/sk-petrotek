@@ -29,7 +29,7 @@ const trustPoints = [
 
 const testimonials = [
   {
-    quote: "SK Proteck delivered our Kerema Primary School on time and above expectations. Their professionalism was outstanding.",
+    quote: "SK Petroteck delivered our Kerema Primary School on time and above expectations. Their professionalism was outstanding.",
     author: "Office of the Open Member for Kerema",
     role: "Gulf Province, Papua New Guinea",
     tag: "Construction Client",
@@ -52,7 +52,7 @@ export default function TrustSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6">
         <div className="mb-7">
           <div className="flex items-center gap-3 mb-3">
-            <span className="text-[#dc2626] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">Why SK Proteck</span>
+            <span className="text-[#dc2626] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">Why SK Petroteck</span>
           </div>
           <h2 className="text-xl lg:text-2xl font-black text-[#1a1a2a] tracking-tight">
             Built on Trust &amp; <span className="text-[#dc2626]">Results</span>

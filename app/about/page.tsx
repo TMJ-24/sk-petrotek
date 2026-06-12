@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import { Target, Eye, Heart, Shield, Zap, Users, Award, TrendingUp } from "lucide-react";
 import Breadcrumb from "@/components/layout/Breadcrumb";
+
+export const metadata: Metadata = {
+  title: "About Us | SK Petroteck Limited",
+  description: "15 years of building PNG — SK Petroteck Limited's mission, values, team, and milestones as Papua New Guinea's trusted construction and infrastructure partner.",
+};
 
 const values = [
   { icon: Shield, title: "Integrity", desc: "Full transparency and the highest professional standards in every engagement." },
@@ -16,7 +22,7 @@ const team = [
 ];
 
 const milestones = [
-  { year: "2009", event: "SK Proteck founded in Port Moresby, PNG" },
+  { year: "2009", event: "SK Petroteck founded in Port Moresby, PNG" },
   { year: "2012", event: "First major civil construction contract secured" },
   { year: "2015", event: "Expanded service fleet to serve nationwide clients" },
   { year: "2020", event: "Awarded government infrastructure contracts" },
@@ -40,7 +46,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <Breadcrumb crumbs={[{ label: "About" }]} />
-            <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">About SK Proteck</span>
+            <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">About SK Petroteck</span>
             <h1 className="text-3xl sm:text-4xl font-black text-white leading-tight mt-2 mb-4">
               15 Years of Building. <span className="text-[#dc2626]">A Legacy of Community.</span>
             </h1>

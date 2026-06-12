@@ -30,7 +30,7 @@ const completedProjects = [
     status: "Completed",
     contract: "Open Member for Kerema",
     image: "/02.jpeg",
-    description: "Delivered a modern primary school facility for the Miaru community, providing students with quality learning infrastructure. SK Proteck collaborated closely with local community leaders throughout the build to ensure the facility met the needs of the district.",
+    description: "Delivered a modern primary school facility for the Miaru community, providing students with quality learning infrastructure. SK Petroteck collaborated closely with local community leaders throughout the build to ensure the facility met the needs of the district.",
     highlights: [
       "Modern classroom blocks",
       "Dedicated library space",
@@ -81,7 +81,7 @@ const inProgressProjects = [
     scope: "Primary School Facility",
     status: "In Progress",
     contract: "Open Member for Kerema",
-    description: "The Putei Primary School is currently in active construction phase. SK Proteck is working closely with the local community and contracting authority to ensure timely and quality delivery of this important education facility.",
+    description: "The Putei Primary School is currently in active construction phase. SK Petroteck is working closely with the local community and contracting authority to ensure timely and quality delivery of this important education facility.",
     highlights: [
       "Classroom block construction",
       "Ablution and water facilities",
@@ -112,7 +112,7 @@ export default function ProjectsPage() {
               Building Futures <span className="text-[#dc2626]">in Gulf Province</span>
             </h1>
             <p className="text-white/60 text-sm leading-relaxed">
-              Contracted by the Open Member for Kerema, SK Proteck has delivered three completed school projects and has two more currently under construction across Gulf Province.
+              Contracted by the Open Member for Kerema, SK Petroteck has delivered three completed school projects and has two more currently under construction across Gulf Province.
             </p>
           </div>
 
@@ -277,7 +277,7 @@ export default function ProjectsPage() {
               Empowering Communities Through Construction
             </h2>
             <p className="text-white/50 max-w-2xl mx-auto text-sm leading-relaxed">
-              Each school built represents hundreds of students gaining access to quality education in Papua New Guinea&apos;s Gulf Province — a direct result of SK Proteck&apos;s commitment to community.
+              Each school built represents hundreds of students gaining access to quality education in Papua New Guinea&apos;s Gulf Province — a direct result of SK Petroteck&apos;s commitment to community.
             </p>
           </div>
         </div>
