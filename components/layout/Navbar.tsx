@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50">
       {/* Main nav */}
-      <div className="bg-[#f1f4f8] border-b border-[#dde2ea]">
+      <div className="bg-white border-b border-[#e2e8f0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
 
@@ -33,7 +33,7 @@ export default function Navbar() {
                 alt="SK Petroteck Limited"
                 width={56}
                 height={56}
-                className="object-contain"
+                className="object-contain mix-blend-multiply"
                 priority
               />
             </Link>
@@ -69,7 +69,7 @@ export default function Navbar() {
                 <Phone className="w-3.5 h-3.5" />
                 +675 XXX XXXX
               </a>
-              <div className="hidden xl:block w-px h-5 bg-[#dde2ea]" />
+              <div className="hidden xl:block w-px h-5 bg-[#e2e8f0]" />
               <Link href="/contact">
                 <button className="h-9 px-6 text-xs font-bold uppercase tracking-[0.12em] bg-[#dc2626] text-white hover:bg-[#b91c1c] transition-colors">
                   Get a Quote
@@ -94,7 +94,7 @@ export default function Navbar() {
         "md:hidden overflow-hidden transition-all duration-200",
         mobileOpen ? "max-h-96" : "max-h-0"
       )}>
-        <div className="bg-[#f1f4f8] border-b border-[#dde2ea]">
+        <div className="bg-white border-b border-[#e2e8f0]">
           {navLinks.map((link) => {
             const active = pathname === link.href;
             return (
