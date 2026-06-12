@@ -47,7 +47,7 @@ export default function FeaturedProjects() {
               Schools That Changed <span className="text-[#dc2626]">a Province.</span>
             </h2>
             <p className="text-gray-400 text-xs font-mono mt-1">
-              Contracted by the Open Member for Kerema, Eastern Gulf Province, PNG
+              Education infrastructure — contracted by the Open Member for Kerema, Gulf Province, PNG
             </p>
           </div>
           <Link href="/projects" className="shrink-0">

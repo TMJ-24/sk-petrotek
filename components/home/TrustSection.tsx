@@ -3,41 +3,41 @@ import { ShieldCheck, Clock, Users, ThumbsUp, Quote } from "lucide-react";
 const trustPoints = [
   {
     icon: ShieldCheck,
-    title: "Certified Technicians",
-    desc: "All our engineers and site teams are professionally certified and trained to international construction standards.",
+    title: "Aviation-Certified Team",
+    desc: "Our specialists are trained to ICAO and PNG CASSI standards for aviation fuel handling, safety, and system compliance.",
     color: "#dc2626",
   },
   {
     icon: Clock,
-    title: "24/7 Emergency Support",
-    desc: "Project deadlines don't wait. Our project management team is responsive and available to keep works on track.",
+    title: "24/7 Operational Support",
+    desc: "Aviation and fuel operations don't stop. Our team is available around the clock to keep critical systems running safely.",
     color: "#dc2626",
   },
   {
     icon: Users,
-    title: "Government Trusted",
-    desc: "Selected by the Open Member for Kerema for critical school construction in Gulf Province.",
+    title: "Trusted by Leading Brands",
+    desc: "Contracted by Airlines PNG, Puma Energy, ADF, Trans Wonderland, WR Carpenters, and government agencies across PNG.",
     color: "#dc2626",
   },
   {
     icon: ThumbsUp,
     title: "Guaranteed Quality",
-    desc: "Every project and service is backed by our quality guarantee and transparent reporting.",
+    desc: "Every project and service is backed by our quality commitment, transparent reporting, and full defects liability.",
     color: "#dc2626",
   },
 ];
 
 const testimonials = [
   {
-    quote: "SK Petroteck delivered our Kerema Primary School on time and above expectations. Their professionalism was outstanding.",
-    author: "Office of the Open Member for Kerema",
-    role: "Gulf Province, Papua New Guinea",
-    tag: "Construction Client",
+    quote: "SK Petroteck delivered the Moro Airfield fuel management works safely and on schedule. Their aviation fuel expertise is outstanding.",
+    author: "Trans Wonderland Ltd",
+    role: "Moro Airfield, Southern Highlands, PNG",
+    tag: "Aviation Client",
     tagColor: "#dc2626",
   },
   {
-    quote: "SK Petroteck completed our community facility ahead of schedule. Their workmanship and site management were outstanding.",
-    author: "Community Representative",
+    quote: "SK Petroteck delivered our school construction projects on time and above expectations. Their professionalism and site management were outstanding.",
+    author: "Office of the Open Member for Kerema",
     role: "Gulf Province, Papua New Guinea",
     tag: "Construction Client",
     tagColor: "#dc2626",

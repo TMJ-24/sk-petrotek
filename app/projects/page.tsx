@@ -1,6 +1,45 @@
 import Image from "next/image";
-import { MapPin, Calendar, Building2, CheckCircle, Clock, Users, Award } from "lucide-react";
+import { MapPin, Calendar, Building2, CheckCircle, Clock, Users, Award, Plane, Droplets } from "lucide-react";
 import Breadcrumb from "@/components/layout/Breadcrumb";
+
+const aviationFuelProjects = [
+  {
+    id: "A1",
+    name: "Moro Airfield Fuel Management",
+    location: "Moro, Southern Highlands, PNG",
+    year: "2025",
+    scope: "Aviation Fuel Project Management",
+    status: "Completed",
+    contract: "Trans Wonderland Ltd",
+    description: "SK Petroteck served as Project Manager for aviation fuel operations at Moro Airfield, Southern Highlands. Scope included oversight of fuel storage, distribution systems, quality management, and compliance with ICAO and PNG CASSI airside standards.",
+    highlights: [
+      "Aviation fuel operations management",
+      "ICAO & PNG CASSI compliance oversight",
+      "Fuel quality management & sampling",
+      "Airside safety coordination",
+      "Project delivered on time and in full",
+    ],
+    icon: Plane,
+  },
+  {
+    id: "A2",
+    name: "WR Carpenters Fuel Facility",
+    location: "Port Moresby, NCD, PNG",
+    year: "2025",
+    scope: "Industrial Fuel Infrastructure",
+    status: "Completed",
+    contract: "WR Carpenters Ltd",
+    description: "SK Petroteck delivered full civil and mechanical installation works for the WR Carpenters fuel facility in Port Moresby. Scope covered bulk fuel storage installation, pipeline commissioning, and system handover.",
+    highlights: [
+      "Bulk fuel storage installation",
+      "Civil & mechanical works",
+      "Pipeline installation & commissioning",
+      "System testing & certification",
+      "Full handover to client",
+    ],
+    icon: Droplets,
+  },
+];
 
 const completedProjects = [
   {
@@ -92,8 +131,8 @@ const inProgressProjects = [
 ];
 
 const metrics = [
-  { label: "Total Projects", value: "5", sub: "Gulf Province, PNG", color: "#dc2626" },
-  { label: "Completed", value: "3", sub: "Fully handed over", color: "#16a34a" },
+  { label: "Total Projects", value: "7+", sub: "Education, Aviation & Fuel", color: "#dc2626" },
+  { label: "Completed", value: "5", sub: "Fully handed over", color: "#16a34a" },
   { label: "In Progress", value: "2", sub: "Active construction", color: "#d97706" },
   { label: "Delivery Rate", value: "100%", sub: "On time, every time", color: "#dc2626" },
 ];
@@ -109,10 +148,10 @@ export default function ProjectsPage() {
             <Breadcrumb crumbs={[{ label: "Projects" }]} />
             <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">Our Projects</span>
             <h1 className="text-3xl sm:text-4xl font-black text-white leading-tight mt-2 mb-4">
-              Building Futures <span className="text-[#dc2626]">in Gulf Province</span>
+              Education, Aviation <span className="text-[#dc2626]">&amp; Fuel Infrastructure</span>
             </h1>
             <p className="text-white/60 text-sm leading-relaxed">
-              Contracted by the Open Member for Kerema, SK Petroteck has delivered three completed school projects and has two more currently under construction across Gulf Province.
+              From school construction in Gulf Province to aviation fuel systems and industrial fuel facilities across Papua New Guinea — SK Petroteck delivers quality outcomes for every client.
             </p>
           </div>
 
@@ -269,15 +308,83 @@ export default function ProjectsPage() {
         </div>
       </section>
 
+      {/* Aviation & Fuel Projects */}
+      <section className="py-8 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-6">
+            <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">Aviation &amp; Fuel Infrastructure</span>
+            <h2 className="text-xl font-bold text-[#1a1a2a] mt-1">Aviation &amp; Fuel Projects</h2>
+          </div>
+          <div className="space-y-5">
+            {aviationFuelProjects.map((project) => {
+              const Icon = project.icon;
+              return (
+                <div key={project.id} className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-sm transition-all">
+                  <div className="flex flex-col lg:flex-row">
+                    {/* Left panel */}
+                    <div className="bg-[#f8fafc] lg:w-52 p-6 flex flex-col justify-between border-r border-gray-200">
+                      <div>
+                        <span className="text-5xl font-black text-gray-100 leading-none select-none">{project.id}</span>
+                        <div className="flex items-center gap-1.5 mt-3 bg-[#dc2626]/10 border border-[#dc2626]/20 rounded-lg px-2 py-1 w-fit">
+                          <CheckCircle className="w-3 h-3 text-[#dc2626]" />
+                          <span className="text-xs text-[#dc2626] font-mono">{project.status}</span>
+                        </div>
+                      </div>
+                      <div className="mt-6 space-y-2">
+                        <div className="flex items-start gap-2 text-xs text-gray-500">
+                          <MapPin className="w-3 h-3 text-[#dc2626] mt-0.5 shrink-0" />
+                          {project.location}
+                        </div>
+                        <div className="flex items-center gap-2 text-xs text-gray-500">
+                          <Calendar className="w-3 h-3 text-[#dc2626] shrink-0" />
+                          Completed {project.year}
+                        </div>
+                        <div className="flex items-center gap-2 text-xs text-gray-500">
+                          <Icon className="w-3 h-3 text-[#dc2626] shrink-0" />
+                          {project.scope}
+                        </div>
+                        <div className="flex items-start gap-2 text-xs text-gray-500">
+                          <Award className="w-3 h-3 text-[#dc2626] mt-0.5 shrink-0" />
+                          {project.contract}
+                        </div>
+                      </div>
+                    </div>
+                    {/* Content */}
+                    <div className="flex-1 p-6">
+                      <h3 className="text-base font-bold text-[#1a1a2a] mb-3">{project.name}</h3>
+                      <p className="text-gray-500 text-sm leading-relaxed mb-5">{project.description}</p>
+                      <div>
+                        <h4 className="text-xs font-mono text-gray-400 uppercase tracking-widest mb-3 flex items-center gap-2">
+                          <Users className="w-3 h-3 text-[#dc2626]" />
+                          Project Highlights
+                        </h4>
+                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+                          {project.highlights.map((h) => (
+                            <li key={h} className="flex items-start gap-2 text-xs text-gray-500">
+                              <CheckCircle className="w-3 h-3 text-[#dc2626] shrink-0 mt-0.5" />
+                              {h}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Impact Banner */}
       <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#0f172a] rounded-xl p-8 text-center">
             <h2 className="text-xl font-bold text-white mb-3">
-              Empowering Communities Through Construction
+              Fueling Progress. Ensuring Safety. Building Trust.
             </h2>
             <p className="text-white/50 max-w-2xl mx-auto text-sm leading-relaxed">
-              Each school built represents hundreds of students gaining access to quality education in Papua New Guinea&apos;s Gulf Province — a direct result of SK Petroteck&apos;s commitment to community.
+              From aviation fuel systems at Moro Airfield to schools that transform communities in Gulf Province — SK Petroteck delivers quality outcomes across Papua New Guinea.
             </p>
           </div>
         </div>

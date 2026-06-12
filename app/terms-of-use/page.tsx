@@ -134,15 +134,15 @@ export default function TermsOfUsePage() {
                 <MapPin className="w-4 h-4 text-[#dc2626] mt-0.5 shrink-0" />
                 <div>
                   <p className="text-xs font-semibold text-[#1a1a2a] mb-0.5">Registered Office</p>
-                  <p className="text-xs text-gray-500">SK Petroteck Ltd, Port Moresby, NCD, Papua New Guinea</p>
+                  <p className="text-xs text-gray-500">SK Petroteck Ltd, P.O. Box 4753, Boroko, NCD, Papua New Guinea</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-[#dc2626] mt-0.5 shrink-0" />
                 <div>
                   <p className="text-xs font-semibold text-[#1a1a2a] mb-0.5">Email</p>
-                  <a href="mailto:info@skproteck.com.pg" className="text-xs text-[#dc2626] hover:underline">
-                    info@skproteck.com.pg
+                  <a href="mailto:skaipu@skpl.com.pg" className="text-xs text-[#dc2626] hover:underline">
+                    skaipu@skpl.com.pg
                   </a>
                 </div>
               </div>

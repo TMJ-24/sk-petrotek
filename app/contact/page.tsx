@@ -3,9 +3,9 @@ import { MapPin, Mail, Phone, Clock, AlertTriangle } from "lucide-react";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 
 const contactDetails = [
-  { icon: MapPin, label: "Address", value: "Port Moresby, National Capital District, Papua New Guinea" },
-  { icon: Mail, label: "Email", value: "info@skproteck.com.pg", href: "mailto:info@skproteck.com.pg" },
-  { icon: Phone, label: "Phone", value: "+675 XXX XXXX", href: "tel:+675XXXXXXXX" },
+  { icon: MapPin, label: "Address", value: "P.O. Box 4753, Boroko, NCD, Papua New Guinea" },
+  { icon: Mail, label: "Email", value: "skaipu@skpl.com.pg", href: "mailto:skaipu@skpl.com.pg" },
+  { icon: Phone, label: "Phone", value: "(+675) 7319 9471 / 7431 1402", href: "tel:+67573199471" },
   { icon: Clock, label: "Business Hours", value: "Mon – Fri: 8:00AM – 5:00PM | Emergency: 24/7" },
 ];
 
@@ -23,7 +23,7 @@ export default function ContactPage() {
               Let&apos;s Build <span className="text-[#dc2626]">Together</span>
             </h1>
             <p className="text-white/60 text-sm leading-relaxed">
-              Whether you need a project quote, want to discuss a construction contract, or have an infrastructure enquiry — our team is ready to help.
+              Whether you need an aviation fuel system, industrial fuel infrastructure, training services, or a construction project quote — our team is ready to help.
             </p>
           </div>
         </div>
@@ -81,8 +81,8 @@ export default function ContactPage() {
               <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
                 <div className="bg-[#f8fafc] h-40 flex flex-col items-center justify-center text-center p-6 border-b border-gray-100">
                   <MapPin className="w-8 h-8 text-[#dc2626] mb-2" />
-                  <p className="text-[#1a1a2a] font-bold text-sm">Port Moresby, PNG</p>
-                  <p className="text-gray-400 text-xs font-mono mt-1">National Capital District</p>
+                  <p className="text-[#1a1a2a] font-bold text-sm">Boroko, Port Moresby</p>
+                  <p className="text-gray-400 text-xs font-mono mt-1">P.O. Box 4753, NCD, PNG</p>
                 </div>
                 <div className="px-4 py-2">
                   <p className="text-gray-400 text-xs font-mono text-center">Map integration available on request</p>
@@ -95,9 +95,9 @@ export default function ContactPage() {
                   <AlertTriangle className="w-4 h-4 text-[#dc2626]" />
                   <h3 className="text-[#dc2626] font-bold text-sm">Urgent Project Enquiries</h3>
                 </div>
-                <p className="text-gray-500 text-xs mb-4 leading-relaxed">Have an urgent project or contract enquiry? Our team is available to assist across PNG.</p>
+                <p className="text-gray-500 text-xs mb-4 leading-relaxed">Have an urgent project, fuel system, or aviation enquiry? Our team is available to assist across PNG.</p>
                 <a
-                  href="tel:+675XXXXXXXX"
+                  href="tel:+67573199471"
                   className="inline-flex items-center gap-2 bg-[#dc2626] text-white text-xs font-bold px-4 py-2 rounded-lg hover:bg-[#b91c1c] transition-colors uppercase tracking-wider"
                 >
                   <Phone className="w-3.5 h-3.5" />

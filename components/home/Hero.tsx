@@ -26,7 +26,7 @@ export default function Hero() {
         style={{ fontSize: "22vw", opacity: 0.03 }}
         aria-hidden
       >
-        PROTECK
+        PETROTECK
       </div>
 
       {/* Main content */}
@@ -36,25 +36,29 @@ export default function Hero() {
           {/* Overline */}
           <div className="animate-fade-up flex items-center gap-3 mb-6">
             <span className="text-white/70 text-[11px] font-mono font-semibold uppercase tracking-[0.25em]">
-              Papua New Guinea&apos;s Infrastructure & Construction Experts
+              Papua New Guinea&apos;s Aviation, Fuel &amp; Construction Specialists
             </span>
           </div>
 
           {/* Headline */}
           <h1 className="animate-fade-up-delay font-black tracking-tight leading-tight mb-6">
             <span className="block text-3xl sm:text-4xl lg:text-5xl">
-              <span className="text-white">Building </span>
-              <span className="text-[#dc2626]">Infrastructure.</span>
+              <span className="text-white">Fueling </span>
+              <span className="text-[#dc2626]">Progress.</span>
             </span>
             <span className="block text-3xl sm:text-4xl lg:text-5xl">
-              <span className="text-white">Transforming </span>
-              <span className="text-[#dc2626]">Communities.</span>
+              <span className="text-white">Ensuring </span>
+              <span className="text-[#dc2626]">Safety.</span>
+            </span>
+            <span className="block text-3xl sm:text-4xl lg:text-5xl">
+              <span className="text-white">Building </span>
+              <span className="text-[#dc2626]">Trust.</span>
             </span>
           </h1>
 
           {/* Subtext */}
           <p className="animate-fade-up-delay-2 text-white/60 text-base leading-relaxed max-w-xl mb-10">
-            SK Petroteck Limited delivers quality construction and community infrastructure projects across Papua New Guinea — building schools and facilities that transform lives in Gulf Province.
+            SK Petroteck Limited specialises in aviation fuel systems, industrial fuel infrastructure, training &amp; competency, and building construction — delivering quality across Papua New Guinea.
           </p>
 
           {/* CTAs */}

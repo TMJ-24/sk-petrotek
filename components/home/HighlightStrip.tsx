@@ -11,13 +11,13 @@ const cards = [
   },
   {
     label: "What We Do",
-    title: "Construction & Civil Works",
+    title: "Aviation, Fuel & Construction",
     image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80&fit=crop",
     href: "/services",
   },
   {
     label: "Our Impact",
-    title: "Schools Built. Communities Served.",
+    title: "Projects Across PNG.",
     image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200&q=80&fit=crop",
     href: "/projects",
   },

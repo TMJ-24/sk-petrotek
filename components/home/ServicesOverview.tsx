@@ -1,31 +1,40 @@
 import Link from "next/link";
-import { Settings, Wrench, School, ArrowRight } from "lucide-react";
+import { Plane, Droplets, GraduationCap, HardHat, ArrowRight } from "lucide-react";
 
 const services = [
   {
-    icon: Settings,
-    tag: "Core Service",
-    title: "Civil Construction",
-    description: "Full-scope civil construction services from site preparation to structural completion. We deliver quality builds on time and within budget across Papua New Guinea.",
-    features: ["Site Preparation", "Foundation Works", "Structural Construction", "External Paving"],
+    icon: Plane,
+    tag: "Aviation",
+    title: "Aviation Fuel Systems",
+    description: "Design, installation, and maintenance of aviation fuel storage and distribution systems to ICAO and PNG CASSI standards — airside, safely.",
+    features: ["Fuel Storage & Distribution", "Refueling Equipment Install", "ICAO/CASSI Compliance", "Quality Management"],
     href: "/services",
     accentColor: "#dc2626",
   },
   {
-    icon: Wrench,
-    tag: "Infrastructure",
-    title: "Facilities & Infrastructure",
-    description: "End-to-end infrastructure delivery including water supply systems, electrical installations, ablution facilities, and access infrastructure for communities across PNG.",
-    features: ["Water Supply Systems", "Electrical Installation", "Ablution Facilities", "Access Pathways"],
+    icon: Droplets,
+    tag: "Industrial",
+    title: "Industrial Fuel Infrastructure",
+    description: "End-to-end delivery of industrial fuel depots, bulk storage tanks, pipeline systems, and commissioning for energy and resources clients across PNG.",
+    features: ["Fuel Depot Construction", "Bulk Storage Tanks", "Pipeline Installation", "System Commissioning"],
     href: "/services",
     accentColor: "#dc2626",
   },
   {
-    icon: School,
-    tag: "Govt. Contracted",
-    title: "Community Projects",
-    description: "Proud contractors for the Open Member for Kerema. SK Petroteck has successfully completed three school construction projects in Eastern Gulf Province, PNG.",
-    features: ["School Construction", "Infrastructure Build", "Gulf Province Focus", "Govt. Contracted"],
+    icon: GraduationCap,
+    tag: "Training",
+    title: "Training & Competency",
+    description: "ICAO-aligned training programmes for aviation fuel handling, safety procedures, and emergency response — issued with certificates of competency.",
+    features: ["Aviation Fuel Handling", "Safety & Emergency Procedures", "Competency Assessment", "On-Site Delivery"],
+    href: "/services",
+    accentColor: "#dc2626",
+  },
+  {
+    icon: HardHat,
+    tag: "Construction",
+    title: "Building & Construction",
+    description: "Quality civil and building construction for schools, community facilities, and government-contracted infrastructure across Papua New Guinea.",
+    features: ["School & Facility Construction", "Civil & Structural Works", "Water & Electrical Systems", "Govt. Contract Execution"],
     href: "/projects",
     accentColor: "#dc2626",
   },
@@ -45,10 +54,10 @@ export default function ServicesOverview() {
               </span>
             </div>
             <h2 className="text-xl lg:text-2xl font-black text-[#1a1a2a] tracking-tight leading-tight max-w-xl">
-              End-to-End Construction <span className="text-[#dc2626]">Solutions</span>
+              Four Specialist <span className="text-[#dc2626]">Verticals</span>
             </h2>
             <p className="text-gray-500 text-sm leading-relaxed max-w-lg mt-3">
-              From civil construction to community infrastructure, SK Petroteck delivers reliable, professional results across Papua New Guinea.
+              From aviation fuel systems to school construction, SK Petroteck delivers safe, compliant, and quality outcomes across Papua New Guinea.
             </p>
           </div>
           <Link href="/services" className="shrink-0">
@@ -60,7 +69,7 @@ export default function ServicesOverview() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {services.map((service) => {
             const Icon = service.icon;
             return (
@@ -68,7 +77,7 @@ export default function ServicesOverview() {
                 key={service.title}
                 className="group bg-white border border-gray-200 rounded-xl hover:border-gray-300 transition-colors overflow-hidden flex flex-col"
               >
-                <div className="p-6 lg:p-8 flex-1">
+                <div className="p-6 flex-1">
                   <div
                     className="w-10 h-10 flex items-center justify-center mb-5 border-2 rounded-xl transition-colors"
                     style={{ backgroundColor: `${service.accentColor}12`, borderColor: `${service.accentColor}40` }}
@@ -89,7 +98,7 @@ export default function ServicesOverview() {
                   </ul>
                 </div>
 
-                <div className="border-t border-gray-100 px-8 lg:px-10 py-5 flex items-center justify-between">
+                <div className="border-t border-gray-100 px-6 py-4 flex items-center justify-between">
                   <Link href={service.href}>
                     <button className="group/btn flex items-center gap-2 text-sm font-mono uppercase tracking-wider transition-colors hover:opacity-80" style={{ color: service.accentColor }}>
                       Learn more

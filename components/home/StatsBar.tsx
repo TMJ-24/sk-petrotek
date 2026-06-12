@@ -1,10 +1,10 @@
-import { Award, Wrench, School, CheckCircle, TrendingUp } from "lucide-react";
+import { Award, Layers, BadgeCheck, CheckCircle, TrendingUp } from "lucide-react";
 
 const stats = [
-  { icon: Award, value: "15+", label: "Years Experience", desc: "Building PNG communities", trend: "+2 YoY" },
-  { icon: Wrench, value: "187+", label: "Projects Completed", desc: "Across Papua New Guinea", trend: "Ongoing" },
-  { icon: School, value: "3", label: "Schools Built", desc: "Eastern Gulf Province, PNG", trend: "Govt. contracted" },
-  { icon: CheckCircle, value: "100%", label: "Project Delivery", desc: "On time, every time", trend: "Zero delays" },
+  { icon: Award, value: "20+", label: "Years Experience", desc: "Combined leadership expertise", trend: "Shell · Puma · InterOil" },
+  { icon: Layers, value: "4", label: "Service Verticals", desc: "Aviation · Fuel · Training · Construction", trend: "Full spectrum" },
+  { icon: BadgeCheck, value: "PGK 950K", label: "Contracts Delivered", desc: "Proven project value", trend: "On time, on budget" },
+  { icon: CheckCircle, value: "100%", label: "PNG Owned", desc: "Nationally owned &amp; operated", trend: "IPA Registered" },
 ];
 
 export default function StatsBar() {

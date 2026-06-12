@@ -63,11 +63,11 @@ export default function Navbar() {
             {/* CTA group */}
             <div className="hidden md:flex items-center gap-3">
               <a
-                href="tel:+675XXXXXXXX"
+                href="tel:+67573199471"
                 className="hidden xl:flex items-center gap-2 text-[#1e293b]/50 hover:text-[#1e293b] transition-colors text-xs font-mono"
               >
                 <Phone className="w-3.5 h-3.5" />
-                +675 XXX XXXX
+                (+675) 7319 9471
               </a>
               <div className="hidden xl:block w-px h-5 bg-[#e2e8f0]" />
               <Link href="/contact">

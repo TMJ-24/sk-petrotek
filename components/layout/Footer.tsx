@@ -10,16 +10,17 @@ const quickLinks = [
 ];
 
 const services = [
-  "Civil Construction",
-  "Facilities & Infrastructure",
-  "Project Management",
-  "Community Projects",
+  "Aviation Fuel Systems",
+  "Industrial Fuel Infrastructure",
+  "Training & Competency",
+  "Building & Construction",
 ];
 
 const projects = [
-  { label: "Kerema Primary School", href: "/projects" },
-  { label: "Malalaua Community School", href: "/projects" },
-  { label: "Kikori District School", href: "/projects" },
+  { label: "Kukipi Primary School", href: "/projects" },
+  { label: "Miaru Primary School", href: "/projects" },
+  { label: "Savaiviri Primary School", href: "/projects" },
+  { label: "Moro Airfield Fuel Works", href: "/projects" },
 ];
 
 const legalLinks = [
@@ -60,7 +61,7 @@ export default function Footer() {
                 <h3 className="text-xl font-black text-white tracking-tight mb-1.5">
                   Ready to work with SK Petroteck?
                 </h3>
-                <p className="text-white/40 text-xs leading-relaxed">Construction, infrastructure delivery, and community development — all in one team.</p>
+                <p className="text-white/40 text-xs leading-relaxed">Aviation fuel, industrial fuel infrastructure, training, and construction — all in one specialist team.</p>
               </div>
               <div className="flex items-center gap-3">
                 <Link href="/contact">
@@ -69,7 +70,7 @@ export default function Footer() {
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </button>
                 </Link>
-                <a href="tel:+675XXXXXXXX">
+                <a href="tel:+67573199471">
                   <button className="inline-flex items-center gap-2 h-10 px-6 border border-white/15 text-white/70 text-xs font-semibold uppercase tracking-[0.15em] rounded-lg hover:border-white/40 hover:text-white transition-colors">
                     <Phone className="w-3.5 h-3.5" />
                     Call Now
@@ -99,7 +100,7 @@ export default function Footer() {
               <span className="text-[#8e9aad] text-[11px] font-semibold tracking-wide">Petroteck Limited</span>
             </Link>
             <p className="text-xs text-[#5a6374] leading-relaxed mb-5">
-              Papua New Guinea&apos;s trusted partner for construction, civil works, and community infrastructure development.
+              Papua New Guinea&apos;s specialist in aviation fuel systems, industrial fuel infrastructure, training &amp; competency, and building construction.
             </p>
           </div>
 
@@ -159,18 +160,18 @@ export default function Footer() {
             <ul className="space-y-3.5 mb-5">
               <li className="flex gap-2.5 items-start">
                 <MapPin className="w-3.5 h-3.5 text-[#dc2626] mt-0.5 shrink-0" />
-                <span className="text-xs text-[#5a6374] leading-relaxed">Port Moresby, NCD, Papua New Guinea</span>
+                <span className="text-xs text-[#5a6374] leading-relaxed">P.O. Box 4753, Boroko, NCD, Papua New Guinea</span>
               </li>
               <li className="flex gap-2.5 items-center">
                 <Mail className="w-3.5 h-3.5 text-[#dc2626] shrink-0" />
-                <a href="mailto:info@skproteck.com.pg" className="text-xs text-[#5a6374] hover:text-[#dc2626] transition-colors">
-                  info@skproteck.com.pg
+                <a href="mailto:skaipu@skpl.com.pg" className="text-xs text-[#5a6374] hover:text-[#dc2626] transition-colors">
+                  skaipu@skpl.com.pg
                 </a>
               </li>
               <li className="flex gap-2.5 items-center">
                 <Phone className="w-3.5 h-3.5 text-[#dc2626] shrink-0" />
-                <a href="tel:+675XXXXXXXX" className="text-xs text-[#5a6374] hover:text-[#dc2626] transition-colors">
-                  +675 XXX XXXX
+                <a href="tel:+67573199471" className="text-xs text-[#5a6374] hover:text-[#dc2626] transition-colors">
+                  (+675) 7319 9471
                 </a>
               </li>
             </ul>
@@ -197,7 +198,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="text-[10px] text-[#5a6374] font-mono hidden md:block">
-            Building Infrastructure. Transforming Communities.
+            Fueling Progress. Ensuring Safety. Building Trust.
           </p>
         </div>
       </div>

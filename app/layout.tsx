@@ -13,10 +13,10 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "SK Petroteck Limited | Construction & Infrastructure PNG",
+  title: "SK Petroteck Limited | Aviation, Fuel & Construction PNG",
   description:
-    "SK Petroteck Limited — Papua New Guinea's trusted partner for community infrastructure, school construction, and civil works projects across Gulf Province.",
-  keywords: "construction, PNG, Papua New Guinea, infrastructure, school construction, Gulf Province, community development, Kerema",
+    "SK Petroteck Limited — Papua New Guinea's specialist in aviation fuel systems, industrial fuel infrastructure, training & competency, and building construction.",
+  keywords: "aviation fuel systems, industrial fuel infrastructure, construction, PNG, Papua New Guinea, training competency, ICAO, Puma Energy, Airlines PNG, Gulf Province",
 };
 
 export default function RootLayout({
