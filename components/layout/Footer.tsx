@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Zap, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -89,16 +89,6 @@ export default function Footer() {
 
           {/* Column 1–2: Brand (spans 2 on lg) */}
           <div className="col-span-2 lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2.5 mb-5">
-              <div className="w-9 h-9 bg-[#dc2626] rounded-full flex items-center justify-center shrink-0">
-                <Zap className="w-4.5 h-4.5 text-[#0f172a]" />
-              </div>
-              <div className="leading-none">
-                <div className="text-[#d0d0d0] font-black text-sm tracking-[0.3em] uppercase">SK</div>
-              </div>
-              <div className="w-px h-6 bg-[#1e293b]" />
-              <span className="text-[#8e9aad] text-[11px] font-semibold tracking-wide">Petroteck Limited</span>
-            </Link>
             <p className="text-xs text-[#5a6374] leading-relaxed mb-5">
               Papua New Guinea&apos;s specialist in aviation fuel systems, industrial fuel infrastructure, training &amp; competency, and building construction.
             </p>
