@@ -22,6 +22,7 @@ export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [form, setForm] = useState({
     name: "", company: "", email: "", phone: "", service: "", message: "",
+    botcheck: "",
   });
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -46,6 +47,7 @@ export default function ContactForm() {
           company: form.company || "Not provided",
           service: form.service,
           message: form.message,
+          botcheck: form.botcheck,
         }),
       });
 
@@ -69,7 +71,7 @@ export default function ContactForm() {
         <button
           onClick={() => {
             setStatus("idle");
-            setForm({ name: "", company: "", email: "", phone: "", service: "", message: "" });
+            setForm({ name: "", company: "", email: "", phone: "", service: "", message: "", botcheck: "" });
           }}
           className="h-8 px-4 text-xs font-mono uppercase tracking-wider border border-gray-200 text-gray-500 rounded-lg hover:border-[#dc2626] hover:text-[#dc2626] transition-colors"
         >
@@ -81,18 +83,30 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      {/* Honeypot — bots fill this, humans don't; Web3Forms rejects non-empty submissions */}
+      <input
+        type="text"
+        name="botcheck"
+        value={form.botcheck}
+        onChange={handleChange}
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ display: "none" }}
+      />
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="flex flex-col gap-1.5">
           <label htmlFor="name" className={labelClass}>
             Full Name <span className="text-[#dc2626]">*</span>
           </label>
           <input id="name" name="name" value={form.name} onChange={handleChange}
-            placeholder="John Smith" required className={inputClass} />
+            placeholder="John Smith" required minLength={2} maxLength={100} className={inputClass} />
         </div>
         <div className="flex flex-col gap-1.5">
           <label htmlFor="company" className={labelClass}>Company / Organisation</label>
           <input id="company" name="company" value={form.company} onChange={handleChange}
-            placeholder="Your Company Ltd" className={inputClass} />
+            placeholder="Your Company Ltd" maxLength={150} className={inputClass} />
         </div>
       </div>
 
@@ -102,12 +116,12 @@ export default function ContactForm() {
             Email <span className="text-[#dc2626]">*</span>
           </label>
           <input id="email" name="email" type="email" value={form.email} onChange={handleChange}
-            placeholder="john@company.com" required className={inputClass} />
+            placeholder="john@company.com" required maxLength={254} className={inputClass} />
         </div>
         <div className="flex flex-col gap-1.5">
           <label htmlFor="phone" className={labelClass}>Phone Number</label>
           <input id="phone" name="phone" type="tel" value={form.phone} onChange={handleChange}
-            placeholder="+675 XXX XXXX" className={inputClass} />
+            placeholder="+675 XXX XXXX" maxLength={20} pattern="[\d\s\+\-\(\)]{6,20}" className={inputClass} />
         </div>
       </div>
 
@@ -130,7 +144,7 @@ export default function ContactForm() {
         </label>
         <textarea id="message" name="message" value={form.message} onChange={handleChange}
           placeholder="Tell us about your project or requirements..."
-          rows={5} required
+          rows={5} required minLength={10} maxLength={2000}
           className="w-full bg-white border border-gray-200 rounded-lg px-3 py-2 text-xs text-[#1a1a2a] placeholder:text-gray-400 focus:outline-none focus:border-[#dc2626] transition-colors resize-none" />
       </div>
 
